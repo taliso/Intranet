@@ -1,34 +1,49 @@
 body {
+    background: #c7ffad;
 
 }
 #Master{
+    width:100%;
 
 }
 #GalvaGalva{
-
+    width:100%;
 }
 #Title{
-
+    width:100%;
 }
 #Zinojumi{
-
+    width:100%;
 }
 #Alert{
-
+    width:100%;
 }
 #Info{
-
+    width:100%;
 }
 #Menju{
-
+    width:20%;
+    float:left;
+    background: #454545;
+    color: #c7ffad;
+    border-radius: 7px;
+    padding: 5px;
 }
 #MenjuTitle{
-
+    width:100%;
+    background: #323232;
+  color: #fffa90;
+    font-family: SansSerif;
+    font-size: 16px;
 }
 #MenjuSaraksts{
-
+    width:100%;
+    border: solid 1px black;
 }
 #Forma{
+    width:79%;
+    float:left;
+    border: solid 1px black;
 
 }
 #FormaTitle{

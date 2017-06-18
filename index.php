@@ -38,10 +38,10 @@ $target_dir = 'uploads';
   	//*********  IELĀDĒJAM AĢENTU SARAKSTU MASĪVĀ $agent_list ******************************
   	
   	//*********  IELĀDĒJAM SISTĒMAS DATUS ***************************************************
-  	$sql = "SELECT * FROM dati";
-  	$q = $db->query($sql);
-  	$r = $q->fetch(PDO::FETCH_ASSOC);
-    $_SESSION['VERSIJA']=$r['versija_koncep'].'-'.$r['versija_db'].'-'.$r['versija_kods'];
+//  	$sql = "SELECT * FROM dati";
+//  	$q = $db->query($sql);
+//  	$r = $q->fetch(PDO::FETCH_ASSOC);
+//    $_SESSION['VERSIJA']=$r['versija_koncep'].'-'.$r['versija_db'].'-'.$r['versija_kods'];
 
 //***   IZVELE NO SARAKSTA  ********************************************************************   	 
 if (isset($_GET[''])){
@@ -90,26 +90,27 @@ if (isset($_POST['btIziet'])) {
 }
 
 ?>
-<form action="#" method="post" enctype="multipart/form-data">
+<form action="index.php" method="post" enctype="multipart/form-data">
 <div id="Master"><!--Master    -->
 	<div id="Galva"><!--Galva    -->
 		<div id="Title"><!--Title    -->
-             <span id="span_16_yealow">Tenapora intranets</span>
+             <span class="spGTitle">Tenapora intranets</span>
 		</div><!--Title    -->
-        <div id="Zinojumi">
+        <div id="Pazinojumi">
             <div id="Alert">
-
+                <span id="spAlert"><?php $_SESSION['SYS']['ALERT']  ?> </span>
             </div>
             <div id="Info">
-
+                <span id="spInfo"><?php $_SESSION['SYS']['INFO']  ?> </span>
             </div>
         </div>
     </div>  <!--Galva    -->
     <div id="Menju">
         <div id="MenjuTitle">
-
+            <span id="spTitle"> Izvēlne</span>
         </div>
         <div id="MenjuSaraksts">
+            <?php include 'menju.php'; ?>
 
         </div>
 
