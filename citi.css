@@ -1,0 +1,28 @@
+ul.li {
+    color: yellow;
+}
+#saraksti {
+    width: 100%;
+}
+#td_atstarpe{
+    width: 2%;
+
+}
+#td_komenti{
+    width: 50%;
+
+}
+#td_iavads{
+    width: 40%;
+
+}
+#HMenju {
+background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6-15 */
+ color: #fffa90;
+    border-radius: 5px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 5px;
+    font-family: verdana;
+    font-size: 14px;
+ }

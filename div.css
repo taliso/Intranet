@@ -6,26 +6,90 @@ body {
     width:100%;
 
 }
-#GalvaGalva{
-    width:100%;
+#Galva{
+    width:99%;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    padding: 7px;
+    overflow: hidden;
+    outline: medium none;
+    border: medium none;
+    border-radius: 7px;
+    color: rgb(255, 235, 5);
+    text-decoration: none;
+    text-align: center;
+    text-indent: 0px;
+    text-overflow: ellipsis;
+    letter-spacing: 0px;
+    white-space: normal;
+    word-spacing: 0px;
+    background: rgb(46, 71, 3) none repeat scroll 0% 0%;
+    box-shadow: 5px 8px 7px -2px rgb(90, 90, 90);
+    margin: 4px;
 }
 #Title{
     width:100%;
+    background: darkgreen;
+    color: yellow;
 }
 #Zinojumi{
     width:100%;
 }
 #Alert{
-    width:100%;
+    width:99%;
+     float: left;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    padding: 7px;
+    overflow: hidden;
+    outline: medium none;
+    border: medium none;
+    border-radius: 7px;
+    color: rgb(119, 21, 17);
+    text-decoration: none;
+    text-align: center;
+    text-indent: 0px;
+    text-overflow: ellipsis;
+    letter-spacing: 0px;
+    white-space: normal;
+    word-spacing: 0px;
+    background: rgb(216, 145, 167) none repeat scroll 0% 0%;
+    box-shadow: 5px 8px 7px -2px rgb(90, 90, 90);
+    margin: 4px;
 }
 #Info{
     width:100%;
+    float: left;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    padding: 7px;
+    overflow: hidden;
+    outline: medium none;
+    border: medium none;
+    border-radius: 7px;
+    color: rgb(46, 71, 3);
+    text-decoration: none;
+    text-align: center;
+    text-indent: 0px;
+    text-overflow: ellipsis;
+    letter-spacing: 0px;
+    white-space: normal;
+    word-spacing: 0px;
+    background: rgb(132, 216, 155) none repeat scroll 0% 0%;
+    box-shadow: 5px 8px 7px -2px rgb(90, 90, 90);
+    margin: 4px;
 }
 #Menju{
     width:20%;
     float:left;
     background: #454545;
-    color: #c7ffad;
+    color: #adaeae;
     border-radius: 7px;
     padding: 5px;
 }
@@ -57,4 +121,57 @@ body {
 }
 #FormaSatusLine{
 
+}
+#liet_kartina {
+    width: 24%;
+    float: left;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    padding: 7px;
+    overflow: hidden;
+    outline: medium none;
+    border: medium none;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    text-indent: 0px;
+    text-overflow: ellipsis;
+    letter-spacing: 0px;
+    white-space: normal;
+    word-spacing: 0px;
+    background: rgb(12, 216, 2) none repeat scroll 0% 0%;
+    box-shadow: 5px 8px 7px -2px rgb(90, 90, 90);
+    margin: 4px;
+
+}
+#liet_saraksts{
+    width: 73%;
+    float: left;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    padding: 7px;
+    overflow: hidden;
+    outline: medium none;
+    border: medium none;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    text-indent: 0px;
+    text-overflow: ellipsis;
+    letter-spacing: 0px;
+    white-space: normal;
+    word-spacing: 0px;
+    background: rgb(12, 216, 2) none repeat scroll 0% 0%;
+    box-shadow: 5px 8px 7px -2px rgb(90, 90, 90);
+    margin: 4px;
+
+}
+#MenjuHor {
+    float: left;
 }

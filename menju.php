@@ -14,7 +14,7 @@
       <li>Nestandarta metālu cenas</li>
       <li>Problēmas pieteikums</li>
       <li>Transporta pieteikums</li>
-    <li><a href="lietotaji.php">Sistēmas lietotāji</a></li>
+    <li><a href="lietotaji.php"><span id="spMenju">Sistēmas lietotāji</span></a></li>
 
 
 

@@ -6,6 +6,7 @@ error_reporting(E_ALL);
 
 include "config\\config.php";
 include "funkcijas.php";
+include "qfunctions.php";
 include "config\\konekcija.php";
 include "\\phpmailer\\mailset.php";
 if (!isset($_SESSION['USER']['STATUS'])){

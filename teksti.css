@@ -1,18 +1,21 @@
 .spGTitle {
     font-family: SansSerif;
-    color: #777620;
-    font-size: 16px;
-
+    color: #8cf194;
+    font-size: 20px;
 }
 
 #spTitle {
     font-family: SansSerif;
-    color: #771511;
-    font-size: 16px;
-
+    color: #ffffff;
+    font-size: 18px;
 }
 
-spTitle {
-
+#spMenju {
+    color: yellow;
 }
 
+#spSaraksts {
+    font-family: SansSerif;
+    color: #2e4703;
+    font-size: 13px;
+}

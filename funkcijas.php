@@ -1,69 +1,4 @@
 <?php
-function datums() {
-	$datums = array ();
-	// $sd=string; Error ????
-	for($d = 1; $d <= 31; $d ++) {
-		$sd = ( string ) $d; // ???
-		$lensd = strlen ( $sd );
-		if ($lensd < 2) {
-			$sd = "0" . $sd;
-		}
-		$datums ["diena"] [] = $sd;
-	}
-	
-	for($m = 1; $m <= 12; $m ++) {
-		$datums ["menes"] [] = $m;
-	}
-	
-	for($g = 2016; $g <= 2018; $g ++) {
-		$datums ["gads"] [] = $g;
-	}
-	
-	return $datums;
-}
-function f_upload($file, $tmp_file, $target_file, $target_dir) {
-	if ($file != "") {
-		
-		
-		$kluda = 0;
-		// Failu apstrāde
-		
-		
-		me ( "f_upload_tmp_file", $tmp_file );
-		
-		$path = "C:\\EasyPHP\\eds-www\\Pretenziju-registrs\\uploads\\";
-		$target = $path . $target_file;
-		
-		me ( "f_upload", $target );
-		if (move_uploaded_file ( $tmp_file, $target )) {
-			echo "The file " . $file . " has been uploaded.";
-		} else {
-			echo "Sorry, there was an error uploading your file.";
-		}
-	}
-}
-function msg($mteksts) {
-	$log = fopen ( LOGFILE, 'a+' );
-	fwrite ( $log, $mteksts . "\n" );
-	fwrite ( $log, "====================================================" . date ( 'd', time () ) . "=" . date ( 'm', time () ) . "======\n" );
-	fclose ( $log );
-}
-function list_row($col_count, $var_array) {
-	// $row_array- Masīva struktūra: 1-mainīgais,2-nosaukums, 3-klase,
-	// $var_array- parādāmo vērtību masīva, kolonnu skaitam jāsakrīt,
-	$tab_row = "";
-	$tab_row = '<tr>';
-	$k = 0;
-	for($k = 0; $k <= $col_count; $k ++) {
-		if ($k == 0) {
-			$tab_row = $tab_row . '<td class="tcol0"><a href="?pret_id=' . $var_array [$k] . '">' . $var_array [$k] . '</td>';
-		} else {
-			$tab_row = $tab_row . '<td class="tcol' . $k . '">' . $var_array [$k] . '</td>';
-		}
-	}
-	$tab_row = $tab_row . '</tr>';
-	return $tab_row;
-}
 function check($mvert) {
 	$vert = "";
 	if ($mvert == 1) {
@@ -136,37 +71,6 @@ function sqlupdate($field, $variable, $ftabula, $fwhere, $db) {
 
 	$q = $db->query ( $sql );
 	return 'true';
-}
-function me($key, $teksts, $vertiba) {
-	if ($_SESSION['DEBUG'] == "ON" && $key=="2") {
-		$file = fopen("tmp\\log.txt","a");
-		$_SESSION['ME_ID']=$_SESSION['ME_ID']+1;
-		$dati=debug_backtrace();
-		foreach ($dati as $d){
-			echo '====================================================='.'<br>';
-//			var_dump($d);
-		}
-		
-		$fil=basename($dati[0]['file']);
-		$lin=$dati[0]['line'];
-		
-		$strings="F:[".$fil." / ".$lin." }  =>  WIEV:".$_SESSION['WAY']."  STATUS:".$_SESSION['PRET']['STATUS']."   REG_NR:".$_SESSION['PRET']['REG_NR'].chr(13) ;
-		echo fputs($file,$strings)."<br>";
-		echo $_SESSION['ME_ID'].":  ".$teksts . " - " . $vertiba.' >> Status:'.$_SESSION['STATUS'].' >> PRET_ID:'.$_SESSION['PRET']['KODS'].' >>REG_NR:'.$_SESSION['PRET']['REG_NR'].' === {'.$fil.' / '.$lin.' }';
-		echo '<br>';echo '-----------------------------------------------------------------------------'.'<br>';
-		fclose($file);	
-	}
-}
-function timer_start() {
-	global $timeparts,$starttime;
-	$timeparts = explode(" ",microtime());
-	$starttime = $timeparts[1].substr($timeparts[0],1);
-	$timeparts = explode(" ",microtime());
-}
-function timer_end() {
-	global $timeparts,$starttime;
-	$endtime = $timeparts[1].substr($timeparts[0],1);
-	return bcsub($endtime,$starttime,6);
 }
 function dropbox_select($marray,$mkey,$mselect){
     $rinda='<select name="drp_'.$mkey.'" id="user_select">';

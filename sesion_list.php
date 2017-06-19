@@ -4,6 +4,7 @@ session_regenerate_id();
 $_SESSION['SYS']['INFO'] = '';
 $_SESSION['SYS']['ALERT'] = '';
 $_SESSION['SYS']['SESSION'] = 0;
+$_SESSION['LIETOTAJI']['FORMA']='';
 
 $_SESSION['USER']['ID'] = 0;
 $_SESSION['USER']['VARDS'] = '';
@@ -26,7 +27,7 @@ $_SESSION['ADMIN']['STATUS']="LIST";
 $_SESSION['ADMIN']['PSW']='';
 $_SESSION['ADMIN']['SUBFORM']='';
 
-$_SESSION['REC']['STATUS']=-6; //-1-nav saglabāts, 0-neitrāls, 1- saglabāts,bet nav ierakstīts, 2-ierakstīts uz saglabāšanu
+$_SESSION['REC']['STATUS']=0; //-1-nav saglabāts, 0-neitrāls, 1- saglabāts,bet nav ierakstīts, 2-ierakstīts uz saglabāšanu
 
 $_SESSION['PERS']['ID']='';
 $_SESSION['PERS']['VARDS']='';
@@ -41,7 +42,7 @@ $_SESSION['PERS']['IEK_TEL']='';
 $_SESSION['PERS']['TELEFONS']='';
 $_SESSION['PERS']['MOBILAIS']='';
 $_SESSION['PERS']['STRUKTURA']='';
-$_SESSION['PERS']['AKTIVS']='';
+$_SESSION['PERS']['AKTIVS']=1;
 $_SESSION['PERS']['PIEZIMES']='';
 $_SESSION['PERS']['PAZIMES']='';
 $_SESSION['PERS']['NPK']='';
